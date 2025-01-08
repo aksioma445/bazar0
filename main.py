@@ -61,7 +61,7 @@ def start_command(message):
         user_data[str(user_id)] = {
             "invite_link": invite_link.invite_link,
             "start_date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "end_date": (datetime.now() + timedelta(days=30)).strftime("%Y-%m-%d %H:%M:%S"),
+            "end_date": (datetime.now() + timedelta(days=3)).strftime("%Y-%m-%d %H:%M:%S"),
             "notified": False
         }
         save_data(user_data)
